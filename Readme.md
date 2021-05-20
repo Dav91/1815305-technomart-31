@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Давит Карапетян](https://up.htmlacademy.ru/htmlcss/31/user/1815305).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Приходкин](https://htmlacademy.ru/profile/prikhodkin).
 
 ---
 
