@@ -1,0 +1,244 @@
+:root {
+    --basic-black: #000000;
+    --basic-white: #ffffff;
+    --basic-extra-white: #F1F5F7;
+    --basic-red: #EE3643;
+    --basic-dark: #32425C;
+    --basic-yellow: #FFD180;
+    --basic-extra-gray: #888888;
+    --basic-top-bottom: #293449;
+    --basic-light-green: #63A63E;
+}
+
+.page-body {
+    margin: 0;
+    padding: 0;
+    font-family: "cuprum", "arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--basic-black);
+}
+
+.page-body ul {
+    list-style: none;
+}
+
+.link-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--basic-white);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+    background-color: var(--basic-red);
+    padding-top: 11px;
+    padding-bottom: 9px;
+    text-align: center;
+}
+
+.popular-products-heading,
+.popular-manufacturers-heading,
+.services-section-heading {
+    font-size: 30px;
+    line-height: 1em;
+    color: var(--basic-dark);
+}
+
+.services-heading,
+.about_company-heading,
+.contacts-heading {
+    font-size: 30px;
+    line-height: 1em;
+    color: var(--basic-black);
+}
+
+.main-header {
+    background-color: var(--basic-extra-white);
+}
+
+.header-menu {
+    background-color: var(--basic-top-bottom);
+}
+
+.header-search-form label {
+    color: var(--basic-white);
+}
+
+.header-menu-list a {
+    color: var(--basic-white);
+    text-decoration: none;
+}
+
+.header-menu-link {
+    background-color: var(--basic-light-green);
+}
+
+.main-heading {
+    color: var(--basic-red);
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+}
+
+.header-contacts a {
+    color: var(--basic-red);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.header-contacts p {
+    font-size: 14px;
+    color: var(--basic-dark);
+}
+
+.login-register a {
+    color: var(--basic-black);
+    font-size: 21px;
+    line-height: 1em;
+    text-decoration: none;
+}
+
+.main-navigation {
+    background-color: var(--basic-dark);
+}
+
+.main-navigation-item a,
+.footer-nav-item a {
+    text-decoration: none;
+    color: var(--basic-white);
+}
+
+.content-item h2 {
+    color: var(--basic-white);
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-left: 23px;
+}
+
+.content-item p {
+    color: var(--basic-white);
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 26px;
+    margin-left: 23px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.content-item1 {
+    background-color: #FFBF47;
+}
+
+.content-item2 {
+    background-color: #3BBCE3;
+}
+
+.content-item3 {
+    background-color: #DC91D8;
+}
+
+.content-item4 {
+    background-color: #8ED78F;
+}
+
+.content-item5 {
+    background-color: #FFBF47;
+}
+
+.popular-products-list {
+    border: 1px solid #EAEAEA;
+    font-family: "PT Sans", arial, sans-serif;
+}
+
+.product-name {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.old-price {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #A9A9A9;
+    text-decoration: line-through;
+    text-align: center;
+}
+
+.new-price {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    text-align: center;
+}
+
+.popular-manufacturers-item {
+    width: 220px;
+    height: 145px;
+    border: 1px solid #EAEAEA;
+    text-align: center;
+    /*почему не работает vertical-align???*/
+    vertical-align: middle;
+}
+
+.popular-manufacturers-item {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.text {
+    font-family: "PT Sans", arial, sans-serif;
+    font-size: 13px;
+}
+
+.button {
+    background-color: var(--basic-dark);
+    border: none;
+    color: var(--basic-white);
+}
+
+.button:hover {
+    color: var(--basic-dark);
+    background-color: var(--basic-white);
+}
+
+.services-section {
+    background: url(../img/delivery-logo.png) no-repeat;
+}
+
+.main-footer {
+    background-color: var(--basic-dark);
+}
+
+.main-footer-text {
+    color: #F3F7F9;
+}
+
+.main-footer-text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-nav-item2 a {
+    color: var(--basic-yellow);
+}
+
+.footer-bottom {
+    background: var(--basic-top-bottom);
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+
+.footer-contact_us-item a {
+    color: var(--basic-yellow);
+    text-decoration: none;
+}
