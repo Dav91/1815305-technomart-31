@@ -150,7 +150,8 @@
     background-color: #FFBF47;
 }
 
-.popular-products-list {
+.popular-products-list,
+.catalog-products-list {
     border: 1px solid #EAEAEA;
     font-family: "PT Sans", arial, sans-serif;
 }
@@ -241,4 +242,111 @@
 .footer-contact_us-item a {
     color: var(--basic-yellow);
     text-decoration: none;
+}
+
+.user-name {
+    font-size: 21px;
+}
+
+.user-section-list-item a {
+    color: var(--basic-dark);
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.user-section-list-item:last-child {
+    list-style-type: disc;
+}
+
+.filter-section-heading,
+.sorting-heading,
+.sorting-list-item,
+.filter-form-btn,
+.catalog-menu-list {
+    font-family: "PT Sans", arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--basic-black);
+}
+
+.catalog-menu-list a,
+.sorting-list-item a {
+    font-family: "PT Sans", arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+    color: var(--basic-black);
+}
+
+.catalog-menu-list-item {
+    background: url(../img/icon-right-small.svg) no-repeat right center;
+    padding-right: 17px;
+}
+
+.sorting-list-item a:visited {
+    color: #EE3643;
+}
+
+.catalog-section-heading {
+    color: var(--basic-dark);
+    font-size: 30px;
+    line-height: 1em;
+}
+
+.filter-form-section-heading {
+    color: ver(--basic-black);
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.filter-form-list-item input {
+    font-family: "PT Sans", arial, sans-serif;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.filter-form-list-item input[type="checkbox"] {
+    margin-right: 12px;
+    margin-top: 20px;
+}
+
+.filter-form-list-item input[type="radio"] {
+    margin-right: 10px;
+    margin-top: 22px;
+}
+
+.catalog-products-list-item a {
+    color: var(--basic-black);
+    text-decoration: none;
+}
+
+.turn-page-list-item a {
+    color: var(--basic-black);
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #e5e5e5;
+}
+
+.turn-page-list-item {
+    margin-bottom: 20px;
+}
+
+.turn-page-list-item a:hover,
+.turn-page-list-item a:focus {
+    color: var(--basic-white);
+    background: var(--basic-red);
+}
+
+.info-heading {
+    font-size: 30px;
+    line-height: 1em;
+}
+
+.info-text {
+    font-family: "PT Sans", arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 67px;
 }

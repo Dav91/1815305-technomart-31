@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html Class="page" lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -8,33 +8,37 @@
     <link rel="icon" href="Favicon/152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="Favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-body">
     <header class="main-header">
-        <a href="#" class="main-header-logo">
-            <img src="img/main-logo.png" width="220" height="47" alt="Главный логотип сайта">
-        </a>
+        <div class="header-menu">
+            <a href="#" class="main-header-logo">
+                <img src="img/main-logo.png" width="220" height="47" alt="Главный логотип сайта">
+            </a>
 
-        <form class="header-search-form">
-            <label for="header-search">Поиск:</label>
-            <input type="text" id="header-search" name="search">
-        </form>
+            <form class="header-search-form">
+                <label for="header-search">Поиск:</label>
+                <input type="text" id="header-search" name="search">
+            </form>
 
-        <ul class="header-top-panel-list">
-            <li class="header-top-panel-ltem">
-                <a href="blank.html">Закладки:0</a>
-            </li>
-            <li class="header-top-panel-ltem">
-                <a href="blank.html">Корзина:0</a>
-            </li>
-            <li class="header-top-panel-ltem header-top-panel-link">
-                <a href="blank.html">Оформить заказ</a>
-            </li>
-        </ul>
+            <ul class="header-menu-list">
+                <li class="header-menu-ltem">
+                    <a href="blank.html">Закладки:0</a>
+                </li>
+                <li class="header-menu-ltem">
+                    <a href="blank.html">Корзина:0</a>
+                </li>
+                <li class="header-menu-ltem header-menu-link">
+                    <a href="blank.html">Оформить заказ</a>
+                </li>
+            </ul>
+        </div>
 
-        <h1 class="main-heading">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
-        <p>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
+        <h1>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
+        <p class="main-heading">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
 
         <section class="header-contacts">
             <h2>Контакты</h2>
@@ -45,9 +49,13 @@
         <section class="user">
             <h2>Личный кабинет</h2>
 
-            <a class="user-logo" href="blank.html">Мой профиль</a>
+            <a class="user-logo" href="blank.html">
+                <img src="img/icon-user.svg" width="20" height="18" alt="Иконка автора">
+            </a>
             <p class="user-name">Равшан Джамшутович</p>
-            <a class="log-out" href="blank.html">Выход</a>
+            <a class="log-out" href="blank.html">
+                <img src="img/icon-login.svg" width="20" height="17" alt="Иконка login">
+            </a>
             <ul class="user-section-list">
                 <li class="user-section-list-item">
                     <a href="blank.html">Мои заказы</a>
@@ -91,7 +99,9 @@
             <h2>Меню каталога</h2>
             <ul class="catalog-menu-list">
                 <li class="catalog-menu-list-item">
-                    <a href="index.html">HOME</a>
+                    <a href="index.html">
+                        <img src="img/icon-home.svg" width="14" height="12" alt="Иконка home">
+                    </a>
                 </li>
                 <li class="catalog-menu-list-item">
                     <a href="catalog.html">КАТАЛОГ</a>
@@ -216,7 +226,7 @@
                             <p class="product-img"><img src="img/catalog-images/img-catalog-perf-2000.jpg" width="127" height="112" alt=""></p>
                             <h3 class="product-name">Перфоратор BOSC<br>BFG 2000</h3>
                         </a>
-                        <a href="#">12500 Р.</a>
+                        <a class="new-price link-btn" href="#">12500 Р.</a>
                     </li>
                     <li class="catalog-products-list-item">
                         <a href="#">
@@ -239,7 +249,7 @@
                             <p class="product-img"><img src="img/catalog-images/img-catalog-perf-2000.jpg" width="127" height="112" alt=""></p>
                             <h3 class="product-name">Перфоратор BOSC<br>BFG 2000</h3>
                         </a>
-                        <a href="#">12500 Р.</a>
+                        <a class="new-price link-btn" href="#">12500 Р.</a>
                     </li>
                 </ul>
                 <ul class="turn-page-list">
@@ -270,7 +280,7 @@
         <a class="main-footer-logo" href="#">
             <img src="img/footer-logo.png" width="220" height="68" alt="Логотип футера">
         </a>
-        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br><a href="tel:+78005558628">+7 800 555-86-28</a></p>
+        <p class="main-footer-text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br><a href="tel:+78005558628">+7 800 555-86-28</a></p>
         <section class="footer-nav">
             <h2>Навигация</h2>
             <ul class="footer-nav-list1">
@@ -308,37 +318,46 @@
                 </li>
             </ul>
         </section>
-        <section class="footer-copyright">
-            <h3>Копирайт сайта</h3>
-            <p>&copy; 2010-2021 Компания &laquo;Техномарт&raquo;<br>Все права защищены</p>
-        </section>
-        <section class="footer-social">
-            <h3>Давайте дружит!</h3>
-            <ul class="footer-social-list">
-                <li class="footer-social-item">
-                    <a href="https://vk.com/">Вконтакте</a>
-                </li>
-                <li class="footer-social-item">
-                    <a href="https://facebook.com/">Фейсбук</a>
-                </li>
-                <li class="footer-social-item">
-                    <a href="https://instagram.com/">Инстаграм</a>
-                </li>
-            </ul>
-        </section>
+        <div class="footer-bottom">
+            <section class="footer-copyright">
+                <h3>Копирайт сайта</h3>
+                <p>&copy; 2010-2021 Компания &laquo;Техномарт&raquo;<br>Все права защищены</p>
+            </section>
+            <section class="footer-social">
+                <h3>Давайте дружит!</h3>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                        <a href="https://vk.com/">
+                            <img src="img/icon-vk.svg" width="25" height="14" alt="vk-icon">
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="https://facebook.com/">
+                            <img src="img/icon-fb.svg" width="25" height="14" alt="fb-icon">
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="https://instagram.com/">
+                            <img src="img/icon-insta.svg" width="25" height="14" alt="insta-icon">
+                        </a>
+                    </li>
+                </ul>
+            </section>
 
-        <section class="footer-contact_us">
-            <ul class="footer-contact_us-list">
-                <li class="footer-contact_us-item">
-                    <h3 class="footer-contat_us-heading">Обратная связь:</h3>
-                    <a class="footer-contat_us-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                </li>
-                <li class="footer-contact_us-item">
-                    <h3 class="footer-contat_us-heading">Разработано-</h3>
-                    <a class="footer-contat_us-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
-                </li>
-            </ul>
-        </section>
+            <section class="footer-contact_us">
+                <h2>Cвяжитесь с нами</h2>
+                <ul class="footer-contact_us-list">
+                    <li class="footer-contact_us-item">
+                        <p>Обратная связь:</p>
+                        <a class="footer-contat_us-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    </li>
+                    <li class="footer-contact_us-item">
+                        <p>Разработано-</p>
+                        <a class="footer-contat_us-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </footer>
 
 </body>
