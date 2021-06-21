@@ -92,8 +92,6 @@
 
 .main-header {
     background-color: var(--basic-extra-white);
-    display: grid;
-    grid-template-rows: min-content min-content min-content;
 }
 
 .header-menu {
@@ -775,6 +773,7 @@ p {
     border: 1px solid var(--basic-fon3);
     padding: 10px 0;
     margin-top: 34px;
+    background: ;
 }
 
 .catalog-products-list {
