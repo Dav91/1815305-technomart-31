@@ -28,6 +28,19 @@
     --basic-fon3: #E5E5E5;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .page {
     height: 100%;
 }
@@ -92,17 +105,17 @@
 
 .main-header {
     background-color: var(--basic-extra-white);
+    margin-bottom: 59px;
 }
 
 .header-menu {
     background-color: var(--basic-top-bottom);
-    display: grid;
     margin-bottom: 37px;
 }
 
 .header-menu .center {
-    display: grid;
-    grid-template-columns: 220px 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-search-form {
@@ -158,8 +171,8 @@
 .header-menu-list {
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-menu-list a {
@@ -179,13 +192,23 @@
 }
 
 .header-content .center {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
 }
 
 .header-content-heading {
-    margin-right: 99px;
+    width: 237px;
     padding-left: 40px;
+}
+
+.header-contacts {
+    width: 275px;
+}
+
+.header-contacts h2 {
+    margin: 0;
+    padding: 0;
 }
 
 .header-contacts a {
@@ -198,13 +221,15 @@
     padding-left: 35px;
 }
 
-.header-contacts {
-    margin-right: 74px;
-}
-
 .header-contacts p {
     font-size: 14px;
     color: var(--basic-dark);
+}
+
+.login-register {
+    display: flex;
+    justify-content: space-between;
+    width: 281px;
 }
 
 .login-register a {
@@ -234,8 +259,17 @@
 }
 
 .main-navigation {
+    padding-bottom: 60px;
+}
+
+.main-navigation-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: var(--basic-dark);
-    margin-bottom: 119px;
+    margin: 0;
+    padding: 0;
+    padding: 16px 53px 20px 53px;
 }
 
 .main-navigation-item a,
@@ -403,12 +437,17 @@
 }
 
 .popular-products-list {
-    display: grid;
-    grid-template-columns: repeat(4, 220px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .popular-products-item {
+    width: 220px;
     height: 318px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-name {
@@ -447,20 +486,26 @@
 }
 
 .popular-manufacturers-list {
-    display: grid;
-    grid-template-columns: repeat(4, 220px);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
 
 .popular-manufacturers-item {
+    display: inline-block;
     width: 220px;
     height: 145px;
     border: 1px solid var(--basic-border-gray);
     text-align: center;
     vertical-align: middle;
-    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.popular-manufacturers-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .popular-manufacturers-item:hover {
@@ -479,21 +524,29 @@
 }
 
 .services .center {
-    display: grid;
-    grid-template-columns: 1fr min-content 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 99px;
 }
 
 .services-header {
-    grid-column: 1/-1;
+    width: 100%;
+    margin-bottom: 70px;
 }
 
-.services-section {
-    grid-column: 2/-1;
+.services-heading {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
 }
 
 .text {
     font-family: "PT Sans", arial, sans-serif;
     font-size: 13px;
+    margin: 0;
+    padding: 0;
 }
 
 .button {
@@ -515,12 +568,21 @@
 }
 
 .services-section {
-    background: url(../img/delivery-logo.png) no-repeat;
+    position: relative;
+    width: 619px;
+    /* background: url(../img/delivery-logo.png) no-repeat;*/
+}
+
+.services-section::after {
+    content: url(../img/delivery-logo.png);
+    position: absolute;
+    top: 37px;
+    right: 0;
 }
 
 .about_us {
-    display: grid;
-    grid-template-columns: 1fr min-content;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 70px;
 }
 
@@ -537,6 +599,10 @@ ul {
     margin-bottom: 24px;
 }
 
+.contacts {
+    width: 300px;
+}
+
 .contacts p {
     margin-bottom: 32px;
 }
@@ -550,11 +616,25 @@ ul {
 }
 
 .about_company ul {
+    margin: 0;
+    padding: 0;
     margin-bottom: 20px;
 }
 
 .about_company ul>li {
+    position: relative;
     margin-bottom: 12px;
+    padding-left: 37px;
+}
+
+.about_company-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 25px;
+    height: 2px;
+    background: var(--basic-red);
 }
 
 .main-footer {
@@ -562,12 +642,13 @@ ul {
 }
 
 .footer-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 54px;
 }
 
 .footer-nav {
-    justify-self: end;
+    width: 546px;
 }
 
 .footer-nav h2,
@@ -575,6 +656,10 @@ ul,
 p {
     margin: 0;
     padding: 0;
+}
+
+.main-footer-header {
+    width: 333px;
 }
 
 .main-footer-logo {
@@ -591,11 +676,29 @@ p {
     color: inherit;
 }
 
+.footer-nav-list1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 37px;
+    margin-bottom: 34px;
+}
+
+.footer-nav-list2 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 18px;
+}
+
+.footer-nav-item a {
+    font-size: 18px;
+}
+
 .footer-nav-item2 a {
     color: var(--basic-yellow);
 }
 
-.footer-nav-item:hover {
+.footer-nav-item:hover,
+.footer-nav-item:focus {
     text-decoration: underline;
 }
 
@@ -605,11 +708,16 @@ p {
 
 .footer-bottom {
     background: var(--basic-top-bottom);
+}
+
+.footer-bottom .center {
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-white);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 34px;
 }
 
 .footer-social-item {
@@ -622,6 +730,12 @@ p {
 .footer-social-item:hover,
 .footer-social-item:active {
     background: var(--basic-red);
+}
+
+.footer-contact_us-list {
+    width: 286px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-contact_us-item a {
@@ -773,7 +887,6 @@ p {
     border: 1px solid var(--basic-fon3);
     padding: 10px 0;
     margin-top: 34px;
-    background: ;
 }
 
 .catalog-products-list {
