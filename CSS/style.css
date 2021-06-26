@@ -28,6 +28,50 @@
     --basic-fon3: #E5E5E5;
 }
 
+@font-face {
+    font-weight: 400;
+    font-family: "Cuprum";
+    src: local("Cuprum"), url("../fonts/cuprum.woff2") format("woff2"), url("../fonts/cuprum.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Cuprum";
+    src: local("Cuprum"), url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Cuprum";
+    src: local("Cuprum"), url("../fonts/cuprumbold.woff2") format("woff2"), url("../fonts/cuprumbold.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Cuprum";
+    src: local("Cuprum"), url("../fonts/cuprumbolditalic.woff2") format("woff2"), url("../fonts/cuprumbolditalic.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "PT Sans";
+    src: local("PT Sans"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "PT Sans";
+    src: local("PT Sans"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+    font-display: swap;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -109,17 +153,19 @@
 }
 
 .header-menu {
+    height: 42px;
     background-color: var(--basic-top-bottom);
     margin-bottom: 37px;
 }
 
 .header-menu .center {
+    height: 42px;
     display: flex;
     justify-content: space-between;
 }
 
 .header-search-form {
-    justify-self: center;
+    width: 290px;
 }
 
 .header-search-form label {
@@ -176,15 +222,20 @@
 }
 
 .header-menu-list a {
+    margin: 0;
+    padding: 0;
     color: var(--basic-white);
     text-decoration: none;
 }
 
 .header-menu-link {
+    width: 150px;
     background-color: var(--basic-light-green);
 }
 
 .main-heading {
+    margin: 0;
+    padding: 0;
     color: var(--basic-red);
     font-size: 16px;
     line-height: 23px;
@@ -212,36 +263,50 @@
 }
 
 .header-contacts a {
+    display: block;
     color: var(--basic-red);
     font-size: 21px;
     line-height: 30px;
-    font-weight: 900;
+    font-weight: 700;
     text-decoration: none;
-    background: url(../img/icon-phone.svg) no-repeat;
-    padding-left: 35px;
+    padding: 4px 50px 5px 73px;
+    margin-bottom: 3px;
+    border: 3px solid var(--basic-white);
 }
 
 .header-contacts p {
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     color: var(--basic-dark);
+    text-align: center;
 }
 
 .login-register {
     display: flex;
     justify-content: space-between;
     width: 281px;
+    height: 45px;
 }
 
-.login-register a {
+.register-link,
+.login-link {
+    display: block;
+    margin: 0;
+    padding: 0;
     color: var(--basic-black);
     font-size: 21px;
     line-height: 1em;
     text-decoration: none;
-    padding: 12px 27px;
+    background: var(--basic-white);
 }
 
 .login-link {
-    background: url(../img/icon-login.svg) no-repeat 0 15px;
+    padding: 12px 27px 12px 45px;
+}
+
+.register-link {
+    padding: 12px 24px;
 }
 
 .login-link:hover,
@@ -587,10 +652,10 @@
 }
 
 .about_us h3,
-a,
-img,
-p,
-ul {
+.about_us a,
+.about_us img,
+.about_us p,
+.about_us ul {
     margin: 0;
     padding: 0;
 }
@@ -651,13 +716,6 @@ ul {
     width: 546px;
 }
 
-.footer-nav h2,
-ul,
-p {
-    margin: 0;
-    padding: 0;
-}
-
 .main-footer-header {
     width: 333px;
 }
@@ -668,6 +726,8 @@ p {
 }
 
 .main-footer-text {
+    margin: 0;
+    padding: 0;
     color: var(--basic-footer-text);
 }
 
@@ -679,6 +739,8 @@ p {
 .footer-nav-list1 {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
     margin-top: 37px;
     margin-bottom: 34px;
 }
@@ -686,6 +748,8 @@ p {
 .footer-nav-list2 {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
     padding-left: 18px;
 }
 
@@ -720,6 +784,17 @@ p {
     padding-bottom: 34px;
 }
 
+.footer-social-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-copyright p {
+    margin: 0;
+    padding: 0;
+}
+
 .footer-social-item {
     display: inline-block;
     border-radius: 50%;
@@ -736,11 +811,20 @@ p {
     width: 286px;
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
-.footer-contact_us-item a {
+.footer-contact_us-link {
     color: var(--basic-yellow);
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-contact_us-item p {
+    margin: 0;
+    padding: 0;
 }
 
 .footer-contact_us-item a:hover {
@@ -952,7 +1036,7 @@ p {
 }
 
 .info h2,
-p {
+.info p {
     margin: 0;
     padding: 0;
 }
