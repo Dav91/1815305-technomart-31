@@ -223,7 +223,7 @@
                     <h3 class="visually-hidden">Преимущество</h3>
                     <ul class="advantages-list">
                         <li class="advantages-item">
-                            <button class="button" type="button">Доставка</button>
+                            <button class="button current-button" type="button">Доставка</button>
                         </li>
                         <li class="advantages-item">
                             <button class="button" type="button">Гарантия</button>
@@ -233,9 +233,18 @@
                         </li>
                     </ul>
                 </section>
-                <section class="services-section">
+                <section class="services-section delivery-section current-services-section">
                     <h3 class="services-section-heading">ДОСТАВКА</h3>
                     <p class="text">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+                </section>
+                <section class="services-section guarantee-section">
+                    <h3 class="services-section-heading">ГАРАНТИЯ</h3>
+                    <p class="text">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его<br>возгоранием, вы всегда можете быть уверены в нашей<br>гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите
+                        как-нибудь сами.</p>
+                </section>
+                <section class="services-section credit-section">
+                    <h3 class="services-section-heading">КРЕДИТ</h3>
+                    <p class="text">Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
                 </section>
             </div>
         </section>
@@ -352,6 +361,39 @@
         </div>
 
     </footer>
+
+    <section class="visually-hidden modal modal-writeUs">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form class="modal-form" method="get" action="https://echo.htmlacademy.ru">
+            <div class="form-section modal-center">
+                <p class="modal-form-row mmm">
+                    <label for="name-surname">Ваше имя:</label>
+                    <input id="name-surname" type="text" name="name-surname" placeholder="Имя Фамилия">
+                </p>
+                <p class="modal-form-row">
+                    <label for="email">Ваш e-mail:</label>
+                    <input id="email" type="email" name="email" placeholder="email@example.com">
+                </p>
+                <p class="modal-textarea">
+                    <label for="textarea">Текст письма:</label>
+                    <textarea id="textarea" placeholder="В свободной форме"></textarea>
+                </p>
+            </div>
+            <div class="button-send">
+                <div class="modal-center">
+                    <button class="modal-button modal-send-button" type="button">Отправить</button>
+                </div>
+            </div>
+            <button class="modal-close modal-close-writeUs" type="button" aria-label="Закрыть"></button>
+        </form>
+    </section>
+
+    <section class="visually-hidden modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822608413316!2d30.315220215588226!3d59.968265981886944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1625757090505!5m2!1sru!2sru"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <button class="modal-close modal-close-map" type="button" aria-label="Закрыть"></button>
+    </section>
 
 </body>
 
