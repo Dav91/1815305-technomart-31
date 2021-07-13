@@ -231,24 +231,6 @@
     color: var(--basic-black);
 }
 
-
-/*
-input.search-input::before {
-    content: "";
-    position: absolute;
-    left: 17px;
-    top: 12px;
-    width: 17px;
-    height: 17px;
-    background: url(../img/icon-search-red.svg);
-    display: none;
-}
-
-.search-input:focus .search-search-input::before {
-    display: block;
-}
-*/
-
 .header-menu-list {
     margin: 0;
     padding: 0;
