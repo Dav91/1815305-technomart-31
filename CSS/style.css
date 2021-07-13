@@ -190,7 +190,7 @@
 }
 
 .header-search-form .search-input {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -1580,7 +1580,7 @@
 
 .range-controls .toggle {
     position: absolute;
-    top: 32px;
+    top: 30px;
     left: 0;
     width: 4px;
     height: 4px;
@@ -1597,7 +1597,7 @@
 }
 
 .range-controls .toggle-max {
-    left: 150px;
+    left: 160px;
 }
 
 .price-controls {
@@ -1700,19 +1700,6 @@ label.max-price::before {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-
-
-/*
-.filter-form-list-item input[type="checkbox"] {
-    margin-right: 12px;
-    margin-top: 20px;
-}
-
-.filter-form-list-item input[type="radio"] {
-    margin-right: 10px;
-    margin-top: 22px;
-}
-*/
 
 .filter-form-section-heading-radio {
     margin-bottom: 26px;
