@@ -1420,20 +1420,32 @@
 
 .sorting {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 19px;
+    padding-right: 17px;
     margin-bottom: 24px;
     background: var(--basic-fon2);
 }
 
 .sorting-list {
+    width: 364px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-grow: 1;
     margin: 0;
     padding: 0;
-    padding-right: 14px;
+    margin-right: 36px;
+}
+
+.sorting-arrows {
+    width: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
 .sorting-heading {
