@@ -1176,7 +1176,6 @@
 .footer-nav-item:hover,
 .footer-nav-item:focus {
     text-decoration: underline;
-    text-decoration-color: inherit;
 }
 
 .footer-nav-item:active {
@@ -1449,10 +1448,10 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 10px;
-    padding-bottom: 6px;
+    padding-bottom: 5px;
     padding-left: 19px;
     padding-right: 17px;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
     background: var(--basic-fon2);
 }
 
