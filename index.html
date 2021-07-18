@@ -9,8 +9,7 @@
     <link rel="apple-touch-icon" href="Favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -27,13 +26,13 @@
                 </form>
 
                 <ul class="header-menu-list">
-                    <li class="header-menu-ltem header-menu-bookmarks">
+                    <li class="header-menu-item header-menu-bookmarks">
                         <a href="blank.html">Закладки: 0</a>
                     </li>
-                    <li class="header-menu-ltem header-menu-cart">
+                    <li class="header-menu-item header-menu-cart">
                         <a href="blank.html">Корзина: 0</a>
                     </li>
-                    <li class="header-menu-ltem header-menu-link">
+                    <li class="header-menu-item header-menu-link">
                         <a href="blank.html">Оформить заказ</a>
                     </li>
                 </ul>
@@ -43,7 +42,7 @@
         <div class="header-content">
             <div class="center">
                 <div class="header-content-heading">
-                    <h1 class="visually-hidden">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
+                    <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
                     <p class="main-heading">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
                 </div>
 
@@ -152,24 +151,40 @@
             <ul class="popular-products-list">
                 <li class="products-list-item popular-products-item">
                     <a class="product-img" href="#"><img src="img/catalog-images/img-catalog-perf-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000"></a>
+                    <div class="catalog-button-box button-panel">
+                        <button class="catalog-btn buy-btn">КУПИТЬ</button>
+                        <button class="catalog-btn bookmarks-btn">В ЗАКЛАДКИ</button>
+                    </div>
                     <p class="product-name">Перфоратор BOSCH BFG 9000</p>
                     <p class="old-price">32500 Р.</p>
                     <a class="new-price" href="catalog.html">25500 Р.</a>
                 </li>
-                <li class="products-list-item popular-products-item">
+                <li class="products-list-item popular-products-item new-product">
                     <a class="product-img" href="#"><img src="img/catalog-images/img-catalog-perf-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"></a>
+                    <div class="catalog-button-box button-panel">
+                        <button class="catalog-btn buy-btn">КУПИТЬ</button>
+                        <button class="catalog-btn bookmarks-btn">В ЗАКЛАДКИ</button>
+                    </div>
                     <p class="product-name">Перфоратор BOSCH BFG 3000</p>
                     <p class="old-price">22500 Р.</p>
                     <a class="new-price" href="catalog.html">15500 Р.</a>
                 </li>
                 <li class="products-list-item popular-products-item">
                     <a class="product-img" href="#"><img src="img/catalog-images/img-catalog-perf-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></a>
+                    <div class="catalog-button-box button-panel">
+                        <button class="catalog-btn buy-btn">КУПИТЬ</button>
+                        <button class="catalog-btn bookmarks-btn">В ЗАКЛАДКИ</button>
+                    </div>
                     <p class="product-name">Перфоратор BOSCH BFG 6000</p>
                     <p class="old-price">30500 Р.</p>
                     <a class="new-price" href="catalog.html">25500 Р.</a>
                 </li>
-                <li class="products-list-item popular-products-item">
+                <li class="products-list-item popular-products-item new-product">
                     <a class="product-img" href="#"><img src="img/catalog-images/img-catalog-perf-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></a>
+                    <div class="catalog-button-box button-panel">
+                        <button class="catalog-btn buy-btn">КУПИТЬ</button>
+                        <button class="catalog-btn bookmarks-btn">В ЗАКЛАДКИ</button>
+                    </div>
                     <p class="product-name">Перфоратор BOSCH BFG 2000</p>
                     <p class="old-price">22500 Р.</p>
                     <a class="new-price" href="catalog.html">12500 Р.</a>
@@ -246,23 +261,25 @@
             </div>
         </section>
 
-        <section class="about_us center">
+        <section class="about-us center">
             <h2 class="visually-hidden">О Нас</h2>
-            <section class="about_company">
-                <h3 class="about_company-heading">КОМПАНИЯ &laquo;ТЕХНОМАРТ&raquo;</h3>
+            <section class="about-company">
+                <h3 class="about-company-heading">КОМПАНИЯ &laquo;ТЕХНОМАРТ&raquo;</h3>
                 <p class="text text-top">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
                 <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаниями:</p>
-                <ul class="about_company-list">
-                    <li class="about_company-item">Деловые линии</li>
-                    <li class="about_company-item">Автотрейдинг</li>
-                    <li class="about_company-item">ЖелДорЭкспедиция</li>
+                <ul class="about-company-list">
+                    <li class="about-company-item">Деловые линии</li>
+                    <li class="about-company-item">Автотрейдинг</li>
+                    <li class="about-company-item">ЖелДорЭкспедиция</li>
                 </ul>
                 <a class="link-btn" href="blank.html">ПОДРОБНЕЕ О КОМПАНИИ</a>
             </section>
             <section class="contacts">
                 <h3 class="contacts-heading">КОНТАКТЫ</h3>
                 <p class="text">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-                <img class="map-img" src="img/map-img.png" width="300" height="158" alt="Место нашего нахождения на карте">
+                <a class="map" href="https://www.google.ru/maps/@59.9682177,30.3163146,17z">
+                    <img class="map-img" src="img/map-img.png" width="300" height="158" alt="Место нашего нахождения на карте">
+                </a>
                 <a class="link-btn" href="blank.html">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
             </section>
         </section>
@@ -274,7 +291,7 @@
                 <a class="main-footer-logo" href="#">
                     <img src="img/footer-logo.png" width="220" height="68" alt="Логотип футера">
                 </a>
-                <p class="main-footer-text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br><a href="tel:+78005558628">+7 800 555-86-28</a></p>
+                <p class="main-footer-text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <a href="tel:+78005558628">+7 800 555-86-28</a></p>
             </div>
             <section class="footer-nav">
                 <h2 class="visually-hidden">Навигация</h2>
@@ -322,17 +339,17 @@
                 <section class="footer-social">
                     <h3 class="visually-hidden">Давайте дружит!</h3>
                     <ul class="footer-social-list">
-                        <li class="footer-social-item">
+                        <li class="footer-social-item" title="Вконтакте">
                             <a href="https://vk.com/">
                                 <img src="img/icon-vk.svg" width="26" height="15" alt="vk-icon">
                             </a>
                         </li>
-                        <li class="footer-social-item">
+                        <li class="footer-social-item" title="Facebook">
                             <a href="https://facebook.com/">
                                 <img src="img/icon-fb.svg" width="12" height="22" alt="fb-icon">
                             </a>
                         </li>
-                        <li class="footer-social-item">
+                        <li class="footer-social-item" title="Instagram">
                             <a href="https://instagram.com/">
                                 <img src="img/icon-insta.svg" width="21" height="21" alt="insta-icon">
                             </a>
@@ -340,16 +357,16 @@
                     </ul>
                 </section>
 
-                <section class="footer-contact_us">
+                <section class="footer-contact-us">
                     <h2 class="visually-hidden">Cвяжитесь с нами</h2>
-                    <ul class="footer-contact_us-list">
-                        <li class="footer-contact_us-item">
+                    <ul class="footer-contact-us-list">
+                        <li class="footer-contact-us-item">
                             <p>Обратная связь:</p>
-                            <a class="footer-contact_us-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                            <a class="footer-contact-us-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                         </li>
-                        <li class="footer-contact_us-item">
+                        <li class="footer-contact-us-item">
                             <p>Разработано-</p>
-                            <a class="footer-contact_us-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
+                            <a class="footer-contact-us-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
                         </li>
                     </ul>
                 </section>
@@ -380,7 +397,7 @@
                     <button class="modal-button modal-send-button" type="button">Отправить</button>
                 </div>
             </div>
-            <button class="modal-close modal-close-writeUs" type="button" aria-label="Закрыть"></button>
+            <button class="modal-close modal-close-write-us" type="button" aria-label="Закрыть"></button>
         </form>
     </section>
 
@@ -390,6 +407,9 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <button class="modal-close modal-close-map" type="button" aria-label="Закрыть"></button>
     </section>
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

@@ -9,14 +9,14 @@
     <link rel="apple-touch-icon" href="Favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body inner-page">
     <header class="main-header">
         <div class="header-menu">
             <div class="center">
-                <a href="#" class="main-header-logo">
+                <a href="index.html" class="main-header-logo">
                     <img src="img/main-logo.png" width="220" height="47" alt="Главный логотип сайта">
                 </a>
 
@@ -26,13 +26,13 @@
                 </form>
 
                 <ul class="header-menu-list">
-                    <li class="header-menu-ltem header-menu-bookmarks">
+                    <li class="header-menu-item header-menu-bookmarks">
                         <a href="blank.html">Закладки: 0</a>
                     </li>
-                    <li class="header-menu-ltem header-menu-cart">
+                    <li class="header-menu-item header-menu-cart">
                         <a href="blank.html">Корзина: 10</a>
                     </li>
-                    <li class="header-menu-ltem header-menu-link">
+                    <li class="header-menu-item header-menu-link">
                         <a href="blank.html">Оформить заказ</a>
                     </li>
                 </ul>
@@ -42,7 +42,7 @@
         <div class="header-content">
             <div class="center">
                 <div class="header-content-heading">
-                    <h1 class="visually-hidden">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
+                    <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
                     <p class="main-heading">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
                 </div>
 
@@ -54,7 +54,20 @@
 
                 <section class="user">
                     <h2 class="visually-hidden">Личный кабинет</h2>
-                    <p class="user-name">Равшан Джамшутович</p>
+                    <div class="user-section">
+                        <a class="user-login" href="blank.html">
+                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z" fill="#C5C5C5"/>
+                            </svg>
+                        </a>
+                        <a class="user-name" href="blank.html">Равшан Джамшутович</a>
+                        <a class="user-logout" href="#">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
+                                <path d="M2.10604 13.952V3.048C2.12404 2.672 2.27704 1.991 3.11604 1.991H8.14304V0H3.11604C0.938036 0 0.112036 1.81 0.0870361 3.027V13.973C0.112036 15.189 0.938036 17 3.11604 17H8.14304V15.01H3.11604C2.27704 15.01 2.12404 14.327 2.10604 13.952Z" fill="#C5C5C5"/>
+                            </svg>
+                        </a>
+                    </div>
                     <ul class="user-section-list">
                         <li class="user-section-list-item">
                             <a href="blank.html" class="my-order">Мои заказы</a>
@@ -102,7 +115,7 @@
             <section class="catalog-menu">
                 <h2 class="visually-hidden">Меню каталога</h2>
                 <ul class="catalog-menu-list">
-                    <li class="catalog-menu-list-item">
+                    <li class="catalog-menu-list-item" title="Home">
                         <a href="index.html">
                             <img src="img/icon-home.svg" width="14" height="12" alt="Иконка home">
                         </a>
@@ -132,8 +145,8 @@
                                         <div class="scale">
                                             <div class="bar"></div>
                                         </div>
-                                        <div class="toggle toggle-min"></div>
-                                        <div class="toggle toggle-max"></div>
+                                        <div class="toggle toggle-min" title="min"></div>
+                                        <div class="toggle toggle-max" title="max"></div>
                                     </div>
                                     <div class="price-controls">
                                         <label class="min-price">
@@ -196,29 +209,29 @@
                             <h3 class="sorting-heading">СОРТИРОВКА:</h3>
                             <ul class="sorting-list">
                                 <li class="sorting-list-item sorting-type sorting-list-current">
-                                    <button class="sorting-type-button" type="button">ПО ЦЕНЕ</button>
+                                    <a class="sorting-type-link" href="#">ПО ЦЕНЕ</a>
                                 </li>
                                 <li class="sorting-list-item sorting-type">
-                                    <button class="sorting-type-button" type="button">ПО ТИПУ</button>
+                                    <a class="sorting-type-link" href="#">ПО ТИПУ</a>
                                 </li>
                                 <li class="sorting-list-item sorting-type">
-                                    <button class="sorting-type-button" type="button">ПО ФУНКЦИОНАЛУ</button>
+                                    <a class="sorting-type-link" href="#">ПО ФУНКЦИОНАЛУ</a>
                                 </li>
                             </ul>
                             <ul class="sorting-arrows">
-                                <li class="sorting-list-item sorting-arrow">
-                                    <button class="sorting-arrow-button sorting-arrow-current" type="button">
+                                <li class="sorting-list-item sorting-arrow" title="Вверх">
+                                    <a class="sorting-arrow-link sorting-arrow-current" href="#">
                                         <svg class="icon-up" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5"/>
                                         </svg>
-                                    </button>
+                                    </a>
                                 </li>
-                                <li class="sorting-list-item sorting-arrow">
-                                    <button class="sorting-arrow-button" type="button">
+                                <li class="sorting-list-item sorting-arrow" title="Вниз">
+                                    <a class="sorting-arrow-link" href="#">
                                         <svg class="icon-down" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.66241 10L0.162415 0H11.1624" fill="#C5C5C5"/>
                                         </svg>
-                                    </button>
+                                    </a>
                                 </li>
                             </ul>
                         </section>
@@ -248,7 +261,7 @@
                                 <p class="old-price">30500 Р.</p>
                                 <a class="new-price" href="#">25500 Р.</a>
                             </li>
-                            <li class="products-list-item catalog-products-list-item">
+                            <li class="products-list-item catalog-products-list-item new-product">
                                 <a href="#" class="product-img">
                                     <img src="img/catalog-images/img-catalog-perf-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                                 </a>
@@ -260,7 +273,7 @@
                                 <p class="old-price">30500 Р.</p>
                                 <a class="new-price" href="#">25500 Р.</a>
                             </li>
-                            <li class="products-list-item catalog-products-list-item">
+                            <li class="products-list-item catalog-products-list-item new-product">
                                 <a href="#" class="product-img">
                                     <img src="img/catalog-images/img-catalog-perf-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                                 </a>
@@ -284,7 +297,7 @@
                                 <p class="old-price">30500 Р.</p>
                                 <a class="new-price" href="#">25500 Р.</a>
                             </li>
-                            <li class="products-list-item catalog-products-list-item">
+                            <li class="products-list-item catalog-products-list-item new-product">
                                 <a href="#" class="product-img">
                                     <img src="img/catalog-images/img-catalog-perf-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                                 </a>
@@ -295,7 +308,7 @@
                                 <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
                                 <a class="new-price" href="#">12500 Р.</a>
                             </li>
-                            <li class="products-list-item catalog-products-list-item">
+                            <li class="products-list-item catalog-products-list-item new-product">
                                 <a href="#" class="product-img">
                                     <img src="img/catalog-images/img-catalog-perf-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                                 </a>
@@ -319,7 +332,7 @@
                                 <p class="old-price">30500 Р.</p>
                                 <a class="new-price" href="#">25500 Р.</a>
                             </li>
-                            <li class="products-list-item catalog-products-list-item">
+                            <li class="products-list-item catalog-products-list-item new-product">
                                 <a href="#" class="product-img">
                                     <img src="img/catalog-images/img-catalog-perf-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                                 </a>
@@ -362,10 +375,10 @@
     <footer class="main-footer">
         <div class="footer-section center">
             <div class="main-footer-header">
-                <a class="main-footer-logo" href="#">
+                <a class="main-footer-logo" href="index.html">
                     <img src="img/footer-logo.png" width="220" height="68" alt="Логотип футера">
                 </a>
-                <p class="main-footer-text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br><a href="tel:+78005558628">+7 800 555-86-28</a></p>
+                <p class="main-footer-text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <a href="tel:+78005558628">+7 800 555-86-28</a></p>
             </div>
 
             <section class="footer-nav">
@@ -413,17 +426,17 @@
                 <section class="footer-social">
                     <h3 class="visually-hidden">Давайте дружит!</h3>
                     <ul class="footer-social-list">
-                        <li class="footer-social-item">
+                        <li class="footer-social-item" title="Вконтакте">
                             <a href="https://vk.com/">
                                 <img src="img/icon-vk.svg" width="26" height="15" alt="vk-icon">
                             </a>
                         </li>
-                        <li class="footer-social-item">
+                        <li class="footer-social-item" title="Facebook">
                             <a href="https://facebook.com/">
                                 <img src="img/icon-fb.svg" width="12" height="22" alt="fb-icon">
                             </a>
                         </li>
-                        <li class="footer-social-item">
+                        <li class="footer-social-item" title="Instagram">
                             <a href="https://instagram.com/">
                                 <img src="img/icon-insta.svg" width="21" height="21" alt="insta-icon">
                             </a>
@@ -431,16 +444,16 @@
                     </ul>
                 </section>
 
-                <section class="footer-contact_us">
+                <section class="footer-contact-us">
                     <h2 class="visually-hidden">Cвяжитесь с нами</h2>
-                    <ul class="footer-contact_us-list">
-                        <li class="footer-contact_us-item">
+                    <ul class="footer-contact-us-list">
+                        <li class="footer-contact-us-item">
                             <p>Обратная связь:</p>
-                            <a class="footer-contact_us-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                            <a class="footer-contact-us-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                         </li>
-                        <li class="footer-contact_us-item">
+                        <li class="footer-contact-us-item">
                             <p>Разработано-</p>
-                            <a class="footer-contact_us-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
+                            <a class="footer-contact-us-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
                         </li>
                     </ul>
                 </section>
@@ -458,8 +471,10 @@
                 <button class="modal-button modal-catalog-button modal-catalog-button-white" type="button">Продолжить покупки</button>
             </div>
         </div>
-        <button class="modal-close modal-close-writeUs" type="button" aria-label="Закрыть"></button>
+        <button class="modal-close modal-close-write-us" type="button" aria-label="Закрыть"></button>
     </section>
+
+    <script src="js/script.js"></script>
 
 </body>
 
